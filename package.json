@@ -1,5 +1,5 @@
 {
-  "name": "lab01_3",
+  "name": "lab01_5",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -12,10 +12,11 @@
     "web-vitals": "^1.1.2"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "npm run lite",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "lite": "lite-server"
   },
   "eslintConfig": {
     "extends": [
@@ -34,5 +35,20 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "main": "index.html",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NguyenHuuThom/FUNiXReactJSLap.git"
+  },
+  "author": "Nguyen Huu Thom",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NguyenHuuThom/FUNiXReactJSLap/issues"
+  },
+  "homepage": "https://github.com/NguyenHuuThom/FUNiXReactJSLap#readme",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
   }
 }
