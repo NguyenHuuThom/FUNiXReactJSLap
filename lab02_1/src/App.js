@@ -1,5 +1,5 @@
 import { Component } from "react";
-import Menu from './component/MenuComponent';
+import Main from './component/MainComponent';
 import { DISHES } from './shared/dishes';
 
 class App extends Component {
@@ -12,7 +12,7 @@ class App extends Component {
 
   render() {
     return (
-      <Menu dishes={this.state.dishes} />
+      <Main dishes={this.state.dishes} />
     )
   }
 }
