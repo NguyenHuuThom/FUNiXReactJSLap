@@ -1,19 +1,15 @@
 import { Component } from "react";
 import Main from './component/MainComponent';
-import { DISHES } from './shared/dishes';
+import './App.css';
 
 class App extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      dishes: DISHES
-    }
-  }
 
   render() {
     return (
-      <Main dishes={this.state.dishes} />
-    )
+      <div className="App">
+        <Main />
+      </div>
+    );
   }
 }
 

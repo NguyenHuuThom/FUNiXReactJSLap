@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Navbar, NavbarBrand, Jumbotron } from 'reactstrap';
+import { Navbar, NavbarBrand, CardHeader } from 'reactstrap';
 
 
 class Header extends Component {
@@ -11,8 +11,8 @@ class Header extends Component {
                         <NavbarBrand href="/">Ristorante Con Fusion</NavbarBrand>
                     </div>
                 </Navbar>
-                <Jumbotron>
-                    <div className="container">
+                <CardHeader>
+                    <div className="container cardheader">
                         <div className="row row-header">
                             <div className="col-12 col-sm-6">
                                 <h1>Ristorante Con Fusion</h1>
@@ -20,7 +20,7 @@ class Header extends Component {
                             </div>
                         </div>
                     </div>
-                </Jumbotron>
+                </CardHeader>
             </>
         )
     }
