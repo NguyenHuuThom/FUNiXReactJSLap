@@ -4,23 +4,45 @@ import { Link } from 'react-router-dom';
 
 function About(props) {
 
-    console.log(props);
-    const leaders = props.leaders.map((leader) => {
-        return (
-            <>
-                <div className="row p-2">
-                    <div className="col-12 col-md-2 p-2">
-                        <img src={leader.image} alt={leader.name} />
+    const RenderLeader = (props) => {
+
+        const leaderlist = props.leaders.map((leader) => {
+            return (
+                <>
+                    <div className="row p-2">
+                        <div className="col-12 col-md-2 p-2">
+                            <img src={leader.image} alt={leader.name} />
+                        </div>
+                        <div className="col-12 col-md-10">
+                            <h3>{leader.name}</h3>
+                            <p>{leader.designation}</p>
+                            <p>{leader.description}</p>
+                        </div>
                     </div>
-                    <div className="col-12 col-md-10">
-                        <h3>{leader.name}</h3>
-                        <p>{leader.designation}</p>
-                        <p>{leader.description}</p>
-                    </div>
-                </div>
-            </>
-        );
-    });
+                </>
+            );
+        })
+
+        return leaderlist;
+    }
+
+    // console.log(props);
+    // const leaders = props.leaders.map((leader) => {
+    //     return (
+    //         <>
+    //             <div className="row p-2">
+    //                 <div className="col-12 col-md-2 p-2">
+    //                     <img src={leader.image} alt={leader.name} />
+    //                 </div>
+    //                 <div className="col-12 col-md-10">
+    //                     <h3>{leader.name}</h3>
+    //                     <p>{leader.designation}</p>
+    //                     <p>{leader.description}</p>
+    //                 </div>
+    //             </div>
+    //         </>
+    //     );
+    // });
 
     return (
         <div className="container">
@@ -78,7 +100,7 @@ function About(props) {
                 </div>
                 <div className="col-12">
                     <Media list>
-                        {leaders}
+                        <RenderLeader leaders={props.leaders} />
                     </Media>
                 </div>
             </div>
