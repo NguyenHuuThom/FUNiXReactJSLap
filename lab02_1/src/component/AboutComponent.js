@@ -2,47 +2,29 @@ import React from 'react';
 import { Breadcrumb, BreadcrumbItem, Card, CardBody, CardHeader, Media } from 'reactstrap';
 import { Link } from 'react-router-dom';
 
+
+
+const RenderLeader = (props) => {
+
+    const leaderlist = props.leaders.map((leader) => {
+        return (
+            <div key={leader.id} className="row p-2">
+                <div className="col-12 col-md-2 p-2">
+                    <img src={leader.image} alt={leader.name} />
+                </div>
+                <div className="col-12 col-md-10">
+                    <h3>{leader.name}</h3>
+                    <p>{leader.designation}</p>
+                    <p>{leader.description}</p>
+                </div>
+            </div>
+        );
+    })
+
+    return leaderlist;
+}
+
 function About(props) {
-
-    const RenderLeader = (props) => {
-
-        const leaderlist = props.leaders.map((leader) => {
-            return (
-                <>
-                    <div className="row p-2">
-                        <div className="col-12 col-md-2 p-2">
-                            <img src={leader.image} alt={leader.name} />
-                        </div>
-                        <div className="col-12 col-md-10">
-                            <h3>{leader.name}</h3>
-                            <p>{leader.designation}</p>
-                            <p>{leader.description}</p>
-                        </div>
-                    </div>
-                </>
-            );
-        })
-
-        return leaderlist;
-    }
-
-    // console.log(props);
-    // const leaders = props.leaders.map((leader) => {
-    //     return (
-    //         <>
-    //             <div className="row p-2">
-    //                 <div className="col-12 col-md-2 p-2">
-    //                     <img src={leader.image} alt={leader.name} />
-    //                 </div>
-    //                 <div className="col-12 col-md-10">
-    //                     <h3>{leader.name}</h3>
-    //                     <p>{leader.designation}</p>
-    //                     <p>{leader.description}</p>
-    //                 </div>
-    //             </div>
-    //         </>
-    //     );
-    // });
 
     return (
         <div className="container">
