@@ -10,7 +10,7 @@ function About(props) {
                 <div className="row">
                     <div className="col-md-2 mb-1">
                         <img width="70%" src={leader.image} alt={leader.name} />
-                    </div>    
+                    </div>
                     <div className="col-md-10 mb-1">
                         <h4>{leader.name}</h4>
                         <p>{leader.designation}</p>
@@ -20,9 +20,9 @@ function About(props) {
             </div>
         );
     });
-    
 
-    return(
+
+    return (
         <div className="container">
             <div className="row">
                 <Breadcrumb>
@@ -32,7 +32,7 @@ function About(props) {
                 <div className="col-12">
                     <h3>About Us</h3>
                     <hr />
-                </div>                
+                </div>
             </div>
             <div className="row row-content">
                 <div className="col-12 col-md-6">
@@ -64,8 +64,8 @@ function About(props) {
                                 <p className="mb-0">You better cut the pizza in four pieces because
                                     I'm not hungry enough to eat six.</p>
                                 <footer className="blockquote-footer">Yogi Berra,
-                                <cite title="Source Title">The Wit and Wisdom of Yogi Berra,
-                                    P. Pepe, Diversion Books, 2014</cite>
+                                    <cite title="Source Title">The Wit and Wisdom of Yogi Berra,
+                                        P. Pepe, Diversion Books, 2014</cite>
                                 </footer>
                             </blockquote>
                         </CardBody>
@@ -86,4 +86,4 @@ function About(props) {
     );
 }
 
-export default About;    
+export default About;
