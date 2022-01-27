@@ -6,7 +6,7 @@ function About(props) {
 
     const leaders = props.leaders.map((leader) => {
         return (
-            <div className="container">
+            <div key={leader.id} className="container">
                 <div className="row">
                     <div className="col-md-2 mb-1">
                         <img width="70%" src={leader.image} alt={leader.name} />
