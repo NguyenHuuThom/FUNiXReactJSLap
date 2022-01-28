@@ -3,8 +3,8 @@ import { Breadcrumb, BreadcrumbItem, Card, CardBody, CardHeader, Media } from 'r
 import { Link } from 'react-router-dom';
 
 function About(props) {
-
-    const leaders = props.leaders.map((leader) => {
+    console.log(props);
+    const leaders = props.leaders.leaders.map((leader) => {
         return (
             <div key={leader.id} className="container">
                 <div className="row">
