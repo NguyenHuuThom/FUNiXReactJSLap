@@ -3,7 +3,6 @@ import { Breadcrumb, BreadcrumbItem, Card, CardBody, CardHeader, Media } from 'r
 import { Link } from 'react-router-dom';
 import { baseUrl } from '../shared/baseUrl';
 
-
 function About(props) {
     console.log(props);
     const leaders = props.leaders.leaders.map((leader) => {
